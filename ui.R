@@ -21,7 +21,7 @@ ui = fluidPage(
     position="static-top",
     footer = includeHTML("footer.html"),
     theme = "bootstrap.min.css",  # <--- To use a theme, uncomment this
-    "Visualization of Airbnb's Rent in New York",
+    "Visualization of Airbnb's Listings in New York City",
     tabPanel('Home',
              icon=icon("home"),
              includeHTML("home.html")
