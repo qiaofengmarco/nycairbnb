@@ -4,6 +4,5 @@ install_if_missing = function(p) {
     install.packages(p)
   }
 }
-install.packages("rgdal", repos="http://R-Forge.R-project.org")
-install.packages("leaflet")
+helpers.installPackages("rgdal", "terra", "raster", "leaflet")
 invisible(sapply(my_packages, install_if_missing))
