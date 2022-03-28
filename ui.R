@@ -35,12 +35,12 @@ ui = fluidPage(
                column(3, 
                       wellPanel(
                         
-                        radioButtons("Regionname", label="Select the level of the number of property a host possesses in total",
-                                     choices=c('Single ( = 1 room)'='Single' , 
-                                               'Very Low ( 2 ~ 3 rooms)'='Very Low', 
-                                               'Low ( 4 ~ 5 rooms)'='Low', 
-                                               'Median ( 6 ~ 20 rooms)'='Median', 
-                                               'High ( > 20 rooms)' = 'High'), 
+                        radioButtons("Regionname", label="Select the level of the number of listing a host possesses in total",
+                                     choices=c('Single ( = 1 listing)'='Single' ,
+                                               'Very Low ( 2 ~ 3 listings)'='Very Low',
+                                               'Low ( 4 ~ 5 listings)'='Low',
+                                               'Median ( 6 ~ 20 listings)'='Median',
+                                               'High ( > 20 listings)' = 'High'),
                                      selected='Single'))
                       
                ),
@@ -57,7 +57,7 @@ ui = fluidPage(
     
     tabPanel('Map',
              icon=icon("map-marked-alt"),
-             titlePanel(h1("Locations of rental rooms in a region", align="center")),
+             titlePanel(h1("Locations of listings in a region", align="center")),
              fluidRow(
                column(3, 
                       wellPanel(
