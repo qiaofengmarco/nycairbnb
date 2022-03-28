@@ -5,4 +5,5 @@ install_if_missing = function(p) {
   }
 }
 helpers.installPackages("rgdal", "terra", "raster", "leaflet")
+
 invisible(sapply(my_packages, install_if_missing))
